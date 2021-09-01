@@ -1,0 +1,9 @@
+dependencies:
+- python>=3.7
+- numpy
+- scikit-learn
+- pandas
+- pip
+- pip:
+  - azureml-defaults>=1.33.0
+  - azureml-core>=1.33.0

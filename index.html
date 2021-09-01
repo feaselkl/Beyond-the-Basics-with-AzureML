@@ -1,0 +1,688 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Catallaxy Services | Getting Beyond the Basics with Azure Machine Learning</title>
+
+		<link rel="stylesheet" href="../reveal.js/dist/reset.css">
+		<link rel="stylesheet" href="../reveal.js/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal.js/dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="../WebsiteAssets/mods.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../reveal.js/plugin/highlight/monokai.css" id="highlight-theme">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h2>Getting Beyond the Basics with Azure Machine Learning</h2>
+					
+					<a href="https://www.catallaxyservices.com">Kevin Feasel</a> (<a href="https://twitter.com/feaselkl">@feaselkl</a>)<br />
+					<a href="https://csmore.info/on/amlindepth">https://csmore.info/on/amlindepth</a>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Who Am I?  What Am I Doing Here?</h3>
+					<div class="container">
+						<div class="col">
+							<table class="whoami">
+								<tr>
+									<td><a href="https://csmore.info"><img src="../WebsiteAssets/Logo.png" height="100" /></a></td>
+									<td nowrap><a href="https://csmore.info">Catallaxy Services</a></td>
+								</tr>
+								<tr>
+									<td><a href="https://curatedsql.com"><img src="../WebsiteAssets/CuratedSQLLogo.png" height="100" /></a></td>
+									<td nowrap><a href="https://curatedsql.com">Curated SQL</a></td>
+								</tr>
+								<tr>
+									<td><a href="https://csmore.info/on/training"><img src="../WebsiteAssets/Teachable.png" height="120" /></a></td>
+									<td nowrap><a href="https://csmore.info/on/training">Training on Teachable</a></td>
+								</tr>
+							</table>
+						</div>
+						<div class="col">
+							<a href="http://www.twitter.com/feaselkl"><img src="../WebsiteAssets/HeadShot.jpg" height="358" width="315" /></a>
+							<br />
+							<a href="http://www.twitter.com/feaselkl">@feaselkl</a>
+						</div>					
+					</div>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/motivation.jpg" data-background-opacity="0.2">
+					<h3>Motivation</h3>
+					
+					<p>My goals in this talk:</p>
+					
+					<ul>
+						<li>Quickly refresh your knowledge of Azure Machine Learning.</li>
+						<li>Dive into code-first programming with Azure ML.</li>
+						<li>Walk through model registration and MLflow.</li>
+						<li>Create and use machine learning pipelines.</li>
+						<li>Lay out the groundwork for MLOps.</li>
+						<li>Show how to write prediction results to Azure SQL Database.</li>
+					</ul>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Agenda</h3>
+					
+					<ol>
+						<li class="active">A Brief Primer on Azure ML</li>
+						<li>Code-First Programming</li>
+						<li>MLflow</li>
+						<li>ML Pipelines</li>
+						<li>MLOps</li>
+						<li>Scoring on Azure SQL DB</li>
+					</ol>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/propane.jpg" data-background-opacity="0.2">
+					<h3>Our Scenario</h3>
+					
+					<p>We work for Catallaxy Services, a company which specializes in the sale of propane and propane accessories in the United States.</p>
+
+					<p>Catallaxy Services has a team of salespeople who travel around the country touting our products.  Because this is business travel, expenses are paid for, including the costs of meals.</p>
+					
+					<p>After a breach of trust in 2018 by certain members of the sales staff, management would like us to build a machine learning model which estimates the cost of meals for the sales team members as they travel.  We have decided to use Azure Machine Learning to do this.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>What is Azure Machine Learning?</h3>
+					
+					<p>Azure Machine Learning is Microsoft's primary offering for machine learning in the cloud.</p>
+					
+					<img src="presentation/assets/image/AzureMLOverview.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/background/lego.jpg" data-background-opacity="0.2">
+					<h3>Key Components</h3>
+					
+					<p>There are several major components which make up Azure ML.</p>
+					
+					<ul>
+						<li>Datastores</li>
+						<li>Datasets</li>
+						<li>Compute instances</li>
+						<li>Compute clusters</li>
+						<li>Azure ML Studio Designer</li>
+						<li>Experiments and Runs</li>
+						<li>Models</li>
+						<li>Endpoints</li>
+						<li>Inference clusters</li>
+					</ul>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Datastores</h3>
+					
+					<p>Datastores are connections to where the data lives, such as Azure SQL Database or Azure Data Lake Storage Gen2.</p>
+					
+					<img src="presentation/assets/image/AzureMLDatastores.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Datasets</h3>
+					
+					<p>Datasets contain the data we use to train models.</p>
+					
+					<img src="presentation/assets/image/AzureMLDatasets.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Compute instances</h3>
+					
+					<p>Compute instances are hosted virtual machines which contain a number of data science and machine learning libraries pre-installed.  You can use these for easy remote development.</p>
+					
+					<img src="presentation/assets/image/AzureMLComputeInstances.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Compute clusters</h3>
+					
+					<p>Sometimes, you want something a bit more powerful to perform training.  This is where compute clusters can help:  spin them up for training and let them disappear automatically afterward to save money.</p>
+					
+					<img src="presentation/assets/image/AzureMLComputeCluster.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Designer</h3>
+					
+					<p>The Azure ML Studio Designer allows you to create training and scoring pipelines using a drag-and-drop interface reminiscent of SQL Server Integration Services.</p>
+					
+					<img src="presentation/assets/image/AzureMLDesigner.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Experiments and Runs</h3>
+					
+					<p>Experiments allow you to try things out in a controlled manner.  Each Run of an experiment is tracked separately in the experiment, letting you see how well your changes work over time.</p>
+					
+					<img src="presentation/assets/image/AzureMLExperiments.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Models</h3>
+					
+					<p>The primary purpose of an experiment is to train a model.</p>
+					
+					<img src="presentation/assets/image/AzureMLModels.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Endpoints</h3>
+					
+					<p>Once you have a trained model, you can expose it as an API endpoint for scoring new data.</p>
+					
+					<img src="presentation/assets/image/AzureMLEndpoints.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Inference clusters</h3>
+					
+					<p>Inference clusters are an easy method to host endpoints for real-time or batch scoring.</p>
+					
+					<img src="presentation/assets/image/AzureMLInferenceCluster.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/background/demo.jpg" data-background-opacity="0.2">
+					<h3>Demo Time</h3>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Agenda</h3>
+					
+					<ol>
+						<li>A Brief Primer on Azure ML</li>
+						<li class="active">Code-First Programming</li>
+						<li>MLflow</li>
+						<li>ML Pipelines</li>
+						<li>MLOps</li>
+						<li>Scoring on Azure SQL DB</li>
+					</ol>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/crt.jpg" data-background-opacity="0.2">
+					<h3>Thinking in Code</h3>
+					
+					<p>The Azure ML Studio Designer works well enough for learning the basics of machine learning projects, but you'll quickly want to write code instead.</p>
+					
+					<p>There are two methods which Azure ML supports for writing and executing code that we will cover:</p>
+					
+					<ul>
+						<li>Executing code with Jupyter notebooks</li>
+						<li>Executing code from a machine with Visual Studio Code</li>
+					</ul>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Notebooks</h3>
+					
+					<p>Azure ML has built-in support for Jupyter notebooks, which execute on compute instances.</p>
+					
+					<img src="presentation/assets/image/AzureMLNotebook.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/background/hardware.jpg" data-background-opacity="0.2">
+					<h3>The Python SDK</h3>
+					
+					<p>Azure ML has a Python SDK which you can use to work with the different constructs in Azure ML, such as Datastores, Datasets, Environments, and Runs.</p>
+					
+					<p>There was an R SDK, but this has been deprecated.  Instead, the recommendation with R code is to use the Azure CLI.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/demo.jpg" data-background-opacity="0.2">
+					<h3>Demo Time</h3>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Executing Code Locally</h3>
+					
+					<p>Notebooks are great for ad hoc work or simple data analysis, but we will want more robust tools for proper code development, testing, and deployment.  This is where Visual Studio Code comes into play.</p>
+					
+					<img src="presentation/assets/image/AzureMLExtension.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<div class="container">
+						<div class="col">
+							<img src="presentation/assets/image/AzureMLExtensionList.png" />
+						</div>
+						<div class="col">
+							<p>The extension provides a direct interface to your Azure ML workspace and also lets you turn a local machine into a compute instance if you have Docker installed.</p>
+						</div>					
+					</div>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Agenda</h3>
+					
+					<ol>
+						<li>A Brief Primer on Azure ML</li>
+						<li>Code-First Programming</li>
+						<li class="active">MLflow</li>
+						<li>ML Pipelines</li>
+						<li>MLOps</li>
+						<li>Scoring on Azure SQL DB</li>
+					</ol>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/MLflow-logo.png" height="100" />
+					
+					<p>MLflow is an open source product designed to manage the Machine Learning development lifecycle.  That is, MLflow allows data scientists to train models, register those models, deploy the models to a web server, and manage model updates.</p>
+					
+					<p>MLflow is most heavily used in Databricks, as this is where the product originated.  Its utility goes well beyond that service, however, and Azure Machine Learning has some interesting integrations and parallels with MLflow.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/quarters.jpg" data-background-opacity="0.2">
+					<h3>Four Products</h3>
+					
+					<p>MLflow is made up of four products which work together to manage ML development.</p>
+					
+					<ul>
+						<li>MLflow Tracking</li>
+						<li>MLFlow Projects</li>
+						<li>MLflow Models</li>
+						<li>MLflow Model Registry</li>
+					</ul>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/lab.jpg" data-background-opacity="0.2">
+					<h3>MLflow Tracking</h3>
+					
+					<p>MLflow Tracking allows data scientists to work with experiments.  For each run in an experiment, a data scientist may log parameters, versions of libraries used, evaluation metrics, and generated output files when training machine learning models.</p>
+
+					<p>Using MLflow Tracking, we can review and audit prior executions of a model training process.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/plan.jpg" data-background-opacity="0.2">
+					<h3>MLflow Projects</h3>
+					
+					<p>An MLflow Project is a way of packaging up code in a manner which allows for consistent deployment and the ability to reproduce results.  MLflow supports several environments for projects, including via Conda, Docker, and directly on a system.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/model.jpg" data-background-opacity="0.2">
+					<h3>MLflow Models</h3>
+					
+					<p>MLflow offers a standardized format for packaging models for distribution.  MLflow takes models from a variety of libraries (including but not limited to <code>scikit-learn</code>, <code>PyTorch</code>, and <code>TensorFlow</code>) and serializes the outputs in a way that we can access them again later, regardless of the specific package which created the model.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/records.jpg" data-background-opacity="0.2">
+					<h3>MLflow Model Registry</h3>
+					
+					<p>The MLflow Model Registry allows data scientists to register models.  With these registered models, operations staff can deploy models from the registry, either by serving them through a REST API or as a batch inference process.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/handshake.jpg" data-background-opacity="0.2">
+					<h3>MLflow and Azure ML</h3>
+					
+					<p>If you already use MLflow for model tracking, you can choose to use it to store Azure ML models as well.  That said, the model registration capabilities in Azure Machine Learning were intentionally designed to emulate the key capabilities of MLflow.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>MLflow Tracking and Experiments</h3>
+					
+					<p>Experiments are the analog to MLflow Tracking.</p>
+					
+					<img src="presentation/assets/image/AzureMLExperiments.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>MLflow Tracking and Experiments</h3>
+					
+					<p>For a given run of an experiment, we can track the details of metrics that we have logged.</p>
+					
+					<img src="presentation/assets/image/AzureMLRunMetrics.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>MLflow Tracking and Experiments</h3>
+					
+					<p>We can also review output files, parameters passed in, and even the contents of Python scripts used to along the way.</p>
+					
+					<img src="presentation/assets/image/AzureMLRunSnapshot.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/background/pipes.jpg" data-background-opacity="0.2">
+					<h3>MLflow Projects and Pipelines</h3>
+					
+					<p>If you use MLflow Projects to package up code, you can execute that code on Azure ML compute.</p>
+					
+					<p>The closest analog in Azure ML is the notion of Pipelines, which we will cover in the next section.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>MLflow Model Registry and Azure ML Models</h3>
+					
+					<p>We can register and store ML models in Azure ML Models.</p>
+					
+					<img src="presentation/assets/image/AzureMLModels.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>MLflow Model Registry and Azure ML Models</h3>
+					
+					<p>Each model contains stored artifacts, including a serialized version of the model and any helper files (such as h5 weights) we need.</p>
+					
+					<img src="presentation/assets/image/AzureMLModelArtifacts.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>MLflow Model Registry and Azure ML Models</h3>
+					
+					<p>Each model also contains information on the datasets used to train it, including links to the dataset <strong>and version</strong> of note.</p>
+					
+					<img src="presentation/assets/image/AzureMLModelDatasets.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>MLflow Model Registry and Azure ML Models</h3>
+					
+					<p>Once we have a model in place we like, Ops can deploy it.</p>
+					
+					<img src="presentation/assets/image/AzureMLModelDeployment.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Agenda</h3>
+					
+					<ol>
+						<li>A Brief Primer on Azure ML</li>
+						<li>Code-First Programming</li>
+						<li>MLflow</li>
+						<li class="active">ML Pipelines</li>
+						<li>MLOps</li>
+						<li>Scoring on Azure SQL DB</li>
+					</ol>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/pipeline.jpg" data-background-opacity="0.2">
+					<h3>Pipelines</h3>
+					
+					<p>Azure ML is built around the notion of pipelines.  With machine learning pipelines, we perform the process of data cleansing, data transformation, model training, model scoring, and model evaluation as different steps in the pipeline.</p>
+					
+					<p>Then, we can perform data transformation and training as part of an inference pipeline, allowing us to generate predictions.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>A Reminder</h3>
+					
+					<p>When we use the Designer to train and deploy models in Azure ML, we're actually creating pipelines.</p>
+					
+					<img src="presentation/assets/image/AzureMLDesigner.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/background/questions.jpg" data-background-opacity="0.2">
+					<h3>Why Pipelines?</h3>
+					
+					<p>There are several reasons to use pipelines.</p>
+					
+					<ul>
+						<li>Script code for source control</li>
+						<li>Control deployment on different types of instances, including local and remote</li>
+						<li>Support heterogeneous compute--only some tasks need GPU support, for example</li>
+						<li>Re-use components between pipelines</li>
+						<li>Collaborate on data science projects with others</li>
+						<li>Separate areas of concern--some can focus on data prep, others on training, others on deployment/versioning</li>
+					</ul>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Pipeline Steps</h3>
+					
+					<p>In order to execute pipeline code from Visual Studio Code, we need Python installed, as well as the Azure ML SDK for Python.  It's easiest to install the Anaconda distribution of Python.</p>
+					
+					<img src="presentation/assets/image/AzureMLPythonSDK.png" height="400" />
+					
+					<pre><code data-trim><script type="text/template">
+					pip install azureml-core
+					pip install azureml-pipeline
+					</script></code></pre>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/demo.jpg" data-background-opacity="0.2">
+					<h3>Demo Time</h3>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/process.jpg" data-background-opacity="0.2">
+					<h3>Converting Code to Pipelines</h3>
+					
+					<p>Taking our original code, let's turn it into an Azure ML pipeline.  To do that, we will:</p>
+					
+					<ul>
+						<li>Move training code into a separate Python file and execute as <code>PythonScriptSteps</code>.</li>
+						<li>Separate out code to run the pipeline.</li>
+						<li>Separate out code to register the resulting model.</li>
+					</ul>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/demo.jpg" data-background-opacity="0.2">
+					<h3>Demo Time</h3>
+				</section>
+
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Agenda</h3>
+					
+					<ol>
+						<li>A Brief Primer on Azure ML</li>
+						<li>Code-First Programming</li>
+						<li>MLflow</li>
+						<li>ML Pipelines</li>
+						<li class="active">MLOps</li>
+						<li>Scoring on Azure SQL DB</li>
+					</ol>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/beaker.jpg" data-background-opacity="0.2">
+					<h3>Deploying Code:  A Better Way</h3>
+					
+					<p>One development we've seen in software engineering has been the automation of code deployment.  With Azure ML, we see a natural progression in deployment capabilities:</p>
+					
+					<ol>
+						<li>Model deployment via the Azure ML Studio UI</li>
+						<li>Model deployment via manually-run notebooks</li>
+						<li>Model deployment via Azure CLI</li>
+						<li>Model CI/CD with Azure DevOps or GitHub Actions</li>
+					</ol>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/documents.jpg" data-background-opacity="0.2">
+					<h3>MLOps and Software Maturity</h3>
+					
+					<p>Machine Learning Operations (MLOps) is built off of the principles of DevOps, but tailored to a world where data and artifacts are just as important as code and the biggest problem isn't deployment--it's <strong>automated re-training and re-deploying</strong>.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/sketch.jpg" data-background-opacity="0.2">
+					<h3>MLOps Maturity Model</h3>
+					
+					<p>Microsoft and Google each have MLOps maturity level models, with Microsoft's being more fine-grained.  As a result, we will review the Microsoft model--though the Google one is good as well!</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/MLOpsLevel0.png" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/MLOpsLevel1.png" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/MLOpsLevel2.png" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/MLOpsLevel3.png" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/MLOpsLevel4.png" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Building MLOps Maturity</h3>
+					
+					<p>Azure DevOps and GitHub Actions both incorporate capabilities to perform model CI/CD with Azure Machine Learning.  Here is an example using Azure DevOps.</p>
+					
+					<img src="presentation/assets/image/AzureDevOpsPipelines.png" height="400" />
+				</section>
+				
+				<section data-background-image="presentation/assets/background/pipes2.jpg" data-background-opacity="0.2">
+					<h3>A Note on Pipelines</h3>
+					
+					<p>Pipelines end up being a heavily-used metaphor when working with machine learning.  There are two different types of pipelines we want to distinguish here.</p>
+					
+					<ul>
+						<li>Azure ML Pipelines concern the code and process of training and scoring models.</li>
+						<li>Azure DevOps Pipelines concern the process of building and deploying code, including machine learning projects.</li>
+					</ul>
+					
+					<p>These are different products with different configurations and having one does not automatically get you the other.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>The Process in a Nutshell</h3>
+					
+					<p>Create a variable group which contains relevant information for deployment.</p>
+					
+					<img src="presentation/assets/image/AzureDevOpsVariableGroup.png" height="450" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Create an Environment</h3>
+					
+					<p>Here is an example of a pipeline which creates an Azure Machine Learning workspace and associated resources.  This is nice to have because it ensures you can re-create an environment after disaster without manual intervention.</p>
+					
+					<img src="presentation/assets/image/AzureDevOpsCreateWorkspace.png" height="350" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/AzureDevOpsCreateWorkspaceYaml.png" height="650" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Train a Model</h3>
+					
+					<p>When code checks in, kick off an ML pipeline which runs unit tests on the code (Model CI) and then trains and evaluates the model.  If the model is good enough, publish artifacts.</p>
+					
+					<img src="presentation/assets/image/AzureDevOpsTrainModel.png" height="383" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/AzureDevOpsTrainModelYaml1.png" height="616" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/AzureDevOpsTrainModelYaml2.png" height="435" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/AzureDevOpsTrainModelYaml3.png" height="517" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/AzureDevOpsTrainModelYaml4.png" height="483" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Deploy a Model</h3>
+					
+					<p>After training the model, we can automate deployment using another Azure DevOps pipeline.</p>
+					
+					<img src="presentation/assets/image/AzureDevOpsDeployModel.png" height="332" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/AzureDevOpsDeployModelYaml1.png" height="474" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<img src="presentation/assets/image/AzureDevOpsDeployModelYaml2.png" height="460" />
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Agenda</h3>
+					
+					<ol>
+						<li>A Brief Primer on Azure ML</li>
+						<li>Code-First Programming</li>
+						<li>MLflow</li>
+						<li>ML Pipelines</li>
+						<li>MLOps</li>
+						<li class="active">Scoring on Azure SQL DB</li>
+					</ol>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/target.jpg" data-background-opacity="0.2">
+					<h3>Scoring on Azure SQL DB</h3>
+					
+					<p>Azure ML is a file-heavy experience, meaning that it is <strong>much</strong> easier to work with files than databases.</p>
+					
+					<p>This is particularly obvious if we want to write prediction results to Azure SQL Database after running a scoring operation.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/background/demo.jpg" data-background-opacity="0.2">
+					<h3>Demo Time</h3>
+				</section>
+
+				<section data-background-image="presentation/assets/background/wrappingup.jpg" data-background-opacity="0.2">
+					<h3>Wrapping Up</h3>
+
+					<p>Over the course of this talk, we have looked at ways to take Azure Machine Learning beyond a drag-and-drop UI for machine learning.  We covered concepts of code-first programming and ML pipelines, introduced MLflow and its AML analogues, and have seen how MLOps can help us push changes out more efficiently.</p>
+				</section>
+				
+				<section data-background-image="presentation/assets/image/Bubbles.jpg" data-background-opacity="0.4">
+					<h3>Wrapping Up</h3>
+					
+					<p>
+						To learn more, go here:
+						<br />
+						<a href="https://csmore.info/on/amlindepth">https://csmore.info/on/amlindepth</a>
+					</p>
+					<br />
+					<p>
+						And for help, contact me:
+						<br />
+						<a href="mailto:feasel@catallaxyservices.com">feasel@catallaxyservices.com</a> | <a href="https://www.twitter.com/feaselkl">@feaselkl</a>
+					</p>
+					<br />
+					<p>
+						Catallaxy Services consulting:
+						<br />
+						<a href="https://csmore.info/contact">https://CSmore.info/on/contact</a>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="../reveal.js/dist/reveal.js"></script>
+		<script src="../reveal.js/plugin/zoom/zoom.js"></script>
+		<script src="../reveal.js/plugin/notes/notes.js"></script>
+		<script src="../reveal.js/plugin/search/search.js"></script>
+		<script src="../reveal.js/plugin/markdown/markdown.js"></script>
+		<script src="../reveal.js/plugin/math/math.js"></script>
+		<script src="../reveal.js/plugin/menu/menu.js"></script>
+		<script src="../reveal.js/plugin/highlight/highlight.js"></script>
+		<script src="../reveal.js/plugin/chart/Chart.min.js"></script>
+		<script src="../reveal.js/plugin/chart/plugin.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				width: '70%',
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+				transition: 'fade',
+				
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight, RevealMath, RevealMenu, RevealChart ]
+			});
+		</script>
+	</body>
+</html>
