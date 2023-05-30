@@ -1,0 +1,38 @@
+$schema: https://azuremlschemas.azureedge.net/latest/commandComponent.schema.json
+name: train_model
+display_name: Train Model
+version: 1
+type: command
+inputs:
+  train_data: 
+    type: uri_folder
+  test_data: 
+    type: uri_folder
+  max_leaf_nodes:
+    type: integer
+  min_samples_leaf:
+    type: integer
+  max_depth:
+    type: integer
+  learning_rate:
+    type: number
+  n_estimators:
+    type: integer
+outputs:
+  model_output:
+    type: mlflow_model
+  test_report:
+    type: uri_folder
+code: ../scripts
+environment: azureml://registries/azureml/environments/lightgbm-3.3/versions/2
+command: >-
+  python train_model.py 
+  --train_data ${{inputs.train_data}}
+  --test_data ${{inputs.train_data}}
+  --max_leaf_nodes ${{inputs.max_leaf_nodes}}
+  --min_samples_leaf ${{inputs.min_samples_leaf}}
+  --max_depth ${{inputs.max_depth}}
+  --learning_rate ${{inputs.learning_rate}}
+  --n_estimators ${{inputs.n_estimators}}
+  --model_output ${{outputs.model_output}}
+  --test_report ${{outputs.test_report}}

@@ -1,0 +1,391 @@
+Community_Name,Sector,Side,Per_capita_income,Percent_unemployed,Percent_without_diploma,Percent_households_below_poverty,Neighborhood,Ward,ZIP,Police_District,Unit_ID,Violation_ID,Issued_year,Time_of_day,License_plate_origin,Vehicle_type
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,23,105,2001,Morning,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,W2,44,60613,19,57,163,2008,Midday,In-state,TRK
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,502,79,2018,Evening,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,1,60622,14,14,52,2002,Overnight,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,1,60622,14,14,44,2014,Evening,In-state,PAS
+Beverly,Other S/SE/SW Side,Far Southwest Side,39523,8,3.7,5.1,B1,19,60655,22,0,52,1996,Overnight,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,Ra,2,60610,18,498,10,2014,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60611,18,498,79,2002,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,28,60607,1,1,79,2004,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,502,10,2009,Overnight,Out-of-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60602,1,152,28,2000,Midday,In-state,Other
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,18,498,10,2004,Morning,In-state,PAS
+West Ridge,Other N/NW Side,Far North Side,23040,8.8,20.8,17.2,WR,50,60659,24,502,144,2011,Evening,In-state,Other
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,502,26,2008,Midday,Out-of-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,15,60629,8,498,185,2015,Midday,In-state,TRK
+Humboldt Park,Other W Side,West Side,13781,17.3,35.4,33.9,HP1,27,60651,11,11,27,2001,Evening,In-state,PAS
+Hermosa,Other N/NW Side,Northwest Side,15089,13.1,41.6,20.5,H2,35,60639,25,502,44,2015,Midday,In-state,PAS
+Rogers Park,Other N/NW Side,Far North Side,23939,8.7,18.2,23.6,RP,49,60626,24,24,6,2009,Morning,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,498,10,2010,Morning,In-state,PAS
+Lower West Side,Other W Side,West Side,16444,15.8,40.7,25.8,LW,25,60608,10,19,6,2011,Morning,In-state,PAS
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,B4,32,60647,14,353,123,2003,Overnight,In-state,PAS
+Clearing,Other S/SE/SW Side,Southwest Side,25113,9.5,18.8,8.9,C3,13,60638,8,8,155,2011,Morning,In-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,Sa,43,60614,18,502,116,2017,Evening,Out-of-state,PAS
+West Englewood,Other S/SE/SW Side,Southwest Side,11317,35.9,26.3,34.4,E2,15,60636,7,0,6,1997,Morning,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,4,60605,1,498,179,2011,Overnight,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60607,1,0,1,1999,Midday,In-state,PAS
+Auburn Gresham,Other S/SE/SW Side,Far Southwest Side,15528,28.3,18.5,27.6,AG,17,60620,6,6,10,2006,Midday,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,1,60622,14,14,155,2005,Midday,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,12,10,2012,AfterWork,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WT,1,60642,14,0,123,1998,Morning,In-state,PAS
+South Chicago,Other S/SE/SW Side,Far Southeast Side,16579,19.7,26.6,29.8,SC,7,60617,4,212,185,2013,Evening,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,47,60613,19,502,44,2012,Evening,Out-of-state,PAS
+Portage Park,Other N/NW Side,Northwest Side,24336,12.6,19.3,11.6,PP,38,60634,16,16,144,2001,Overnight,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60603,1,498,154,2013,Morning,In-state,PAS
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,LS2,35,60647,14,729,113,2015,AfterWork,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,0,123,1998,AfterWork,In-state,PAS
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,6,60619,6,6,10,2004,Evening,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,37,60639,25,25,44,2003,AfterWork,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,498,1,2008,Midday,In-state,PAS
+Washington Heights,Other S/SE/SW Side,Far Southwest Side,19713,20.8,13.7,16.9,WH,9,60628,22,22,123,2000,Morning,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,1,60622,14,498,6,1999,Morning,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,46,60657,19,23,105,2007,Midday,Out-of-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,42,60601,1,495,1,2000,Midday,Out-of-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,2,60614,18,15,6,2013,Morning,Out-of-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,27,60610,18,18,6,2016,Morning,In-state,PAS
+Near South Side,Near South Side,Central,59077,4.9,7.4,13.8,NS,3,60616,1,0,105,1996,Midday,In-state,Other
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,8,60619,6,253,10,2008,Evening,In-state,TMP
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,5,60637,2,498,113,2015,Midday,Out-of-state,PAS
+East Side,Other S/SE/SW Side,Far Southeast Side,17104,12.1,31.9,19.2,ES,10,60617,4,0,53,1996,Overnight,In-state,PAS
+North Center,Other N/NW Side,North Side,57123,5.2,4.5,7.5,NC2,47,60618,19,19,1,2008,Evening,In-state,PAS
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,24,60623,10,315,154,2010,Evening,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,OT,27,60610,18,18,105,2008,Midday,In-state,TRK
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,29,60644,15,498,185,2012,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,18,113,2004,Evening,In-state,PAS
+South Shore,Other S/SE/SW Side,South Side,19398,20,14,31.1,SS,5,60649,3,498,6,2010,Morning,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,498,123,2010,Morning,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,32,60647,14,498,6,2010,Morning,In-state,PAS
+Beverly,Other S/SE/SW Side,Far Southwest Side,39523,8,3.7,5.1,B1,19,60655,22,498,185,2017,Midday,In-state,PAS
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,28,60608,10,10,1,2015,AfterWork,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,37,60644,15,153,123,2002,Evening,In-state,PAS
+Albany Park,Other N/NW Side,Far North Side,21323,10,32.9,19.2,AP2,33,60625,17,498,26,2009,AfterWork,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,28,60607,12,502,44,2014,AfterWork,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,29,60644,15,15,185,2015,AfterWork,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,502,10,2010,AfterWork,In-state,PAS
+West Englewood,Other S/SE/SW Side,Southwest Side,11317,35.9,26.3,34.4,E2,16,60636,7,24,65,2015,Morning,In-state,PAS
+Dunning,Other N/NW Side,Northwest Side,26282,10,16.2,10.6,D2,38,60634,16,504,123,2012,Morning,In-state,PAS
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,15,60609,9,20,44,2013,Midday,In-state,PAS
+Brighton Park,Other S/SE/SW Side,Southwest Side,13089,13.9,45.1,23.6,BP,12,60632,9,498,6,2013,Morning,In-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,14,60629,8,498,44,2004,Morning,In-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,19,19,105,2013,Morning,Out-of-state,PAS
+Rogers Park,Other N/NW Side,Far North Side,23939,8.7,18.2,23.6,RP,49,60626,24,498,123,2001,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,34,60607,12,502,44,2017,Evening,In-state,TMP
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60603,1,152,163,2004,Midday,Out-of-state,PAS
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,8,60619,6,6,185,2014,Overnight,In-state,TMP
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,GC2,2,60610,18,18,44,2014,Overnight,In-state,TMP
+Uptown,Other N/NW Side,Far North Side,35787,8.9,11.8,24,U,46,60640,19,498,6,2009,Morning,In-state,PAS
+Near South Side,Near South Side,Central,59077,4.9,7.4,13.8,NS,4,60616,1,21,177,2007,Evening,In-state,PAS
+Albany Park,Other N/NW Side,Far North Side,21323,10,32.9,19.2,AP2,39,60630,17,17,144,2009,Overnight,In-state,TRK
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,0,79,1996,Midday,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,23,105,2004,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,Ra,2,60610,18,498,79,2000,Midday,Out-of-state,PAS
+Humboldt Park,Other W Side,West Side,13781,17.3,35.4,33.9,HP1,26,60647,25,498,113,2007,Midday,In-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,19,729,113,2017,Morning,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,28,60607,1,494,182,2000,Midday,In-state,PAS
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,28,60608,10,498,6,2010,Morning,Out-of-state,PAS
+Ashburn,Other S/SE/SW Side,Far Southwest Side,23482,11.7,17.7,10.4,A2,18,60652,8,8,123,2007,AfterWork,In-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,Sa,43,60614,19,729,113,2012,Morning,In-state,PAS
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,24,60623,10,498,123,2009,Morning,In-state,PAS
+Riverdale,Other S/SE/SW Side,Far Southeast Side,8201,34.6,27.5,56.5,R1,10,60827,5,5,10,2014,AfterWork,Out-of-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60605,1,152,154,2000,Morning,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,501,185,2012,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,496,182,2008,AfterWork,In-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,5,60637,2,498,113,2003,Morning,In-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,16,60636,8,24,10,2008,Evening,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,0,113,1997,Midday,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,4,60604,1,152,79,2004,Morning,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,46,60613,19,502,113,2013,Evening,In-state,TRK
+North Center,Other N/NW Side,North Side,57123,5.2,4.5,7.5,NC2,47,60618,19,253,154,2005,Evening,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,23,1,2002,Midday,Out-of-state,PAS
+Mckinley Park,Other S/SE/SW Side,Southwest Side,16954,13.4,32.9,18.7,MP1,12,60609,9,501,10,2002,Morning,In-state,PAS
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,16,60609,9,10,27,2013,Evening,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,28,60612,12,12,6,2001,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,S,42,60611,18,498,79,2001,Midday,In-state,PAS
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,11,60609,9,9,65,2005,Morning,In-state,TRK
+Belmont Cragin,Other N/NW Side,Northwest Side,15461,14.6,37.3,18.7,BC,30,60634,25,25,31,2015,Morning,In-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,5,60637,2,495,105,2006,Morning,In-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,5,60637,2,498,26,2011,Midday,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,42,60601,1,252,1,2009,Morning,In-state,PAS
+Hegewisch,Other S/SE/SW Side,Far Southeast Side,22677,9.6,19.2,17.1,H1,10,60633,4,498,144,2014,Morning,In-state,TRK
+West Ridge,Other N/NW Side,Far North Side,23040,8.8,20.8,17.2,WR,50,60659,24,24,113,2001,Morning,In-state,Other
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,24,60623,10,501,123,2001,Midday,In-state,PAS
+Gage Park,Other S/SE/SW Side,Southwest Side,12171,18.2,51.5,23.4,GP3,14,60632,9,9,53,2008,Overnight,In-state,TRK
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,S,2,60611,18,252,26,2010,Midday,In-state,TRK
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,28,60612,11,10,105,2000,Midday,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60606,1,252,105,2009,Morning,In-state,Other
+Gage Park,Other S/SE/SW Side,Southwest Side,12171,18.2,51.5,23.4,GP3,14,60629,8,17,6,2003,Morning,In-state,TRK
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,11,60609,9,498,10,2013,Morning,In-state,TMP
+Archer Heights,Other S/SE/SW Side,Southwest Side,16134,16.5,35.9,14.1,AH,14,60632,8,498,112,2012,Morning,In-state,PAS
+East Side,Other S/SE/SW Side,Far Southeast Side,17104,12.1,31.9,19.2,ES,10,60617,4,4,6,2001,Morning,In-state,PAS
+Morgan Park,Other S/SE/SW Side,Far Southwest Side,27149,15,10.8,13.2,MP3,21,60643,22,22,53,2009,Midday,In-state,TMP
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,GC2,2,60611,18,18,163,2003,Overnight,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,Ra,42,60610,18,498,154,2005,Midday,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,29,60644,15,25,27,2015,Evening,In-state,PAS
+Albany Park,Other N/NW Side,Far North Side,21323,10,32.9,19.2,AP2,33,60625,17,498,26,2011,Midday,In-state,TMP
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,2,60610,18,18,79,2012,AfterWork,In-state,Other
+Uptown,Other N/NW Side,Far North Side,35787,8.9,11.8,24,U,47,60640,19,498,112,2009,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,28,60607,1,498,154,2016,Midday,In-state,PAS
+West Lawn,Other S/SE/SW Side,Southwest Side,16907,9.6,33.6,14.9,WL1,13,60629,8,0,1,1996,Midday,In-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,4,60615,2,498,1,2001,Morning,In-state,PAS
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,11,60609,9,498,44,2002,Midday,In-state,TRK
+Lincoln Square,Other N/NW Side,Far North Side,37524,8.2,13.4,10.9,LS1,47,60625,19,502,45,2003,Evening,In-state,PAS
+Near South Side,Near South Side,Central,59077,4.9,7.4,13.8,NS,3,60605,1,211,10,2017,Midday,Out-of-state,TMP
+Lincoln Square,Other N/NW Side,Far North Side,37524,8.2,13.4,10.9,LS1,47,60625,19,502,10,2011,Evening,In-state,PAS
+Humboldt Park,Other W Side,West Side,13781,17.3,35.4,33.9,HP1,37,60624,11,11,154,2013,Overnight,In-state,PAS
+Gage Park,Other S/SE/SW Side,Southwest Side,12171,18.2,51.5,23.4,GP3,14,60632,9,20,6,2013,Morning,Out-of-state,TMP
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,1,60622,14,502,44,2013,Evening,In-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,18,18,113,1999,Morning,In-state,PAS
+Forest Glen,Other N/NW Side,Far North Side,44164,6.8,4.9,7.5,SF,39,60646,16,51,1,2001,Midday,In-state,PAS
+Woodlawn,Other S/SE/SW Side,South Side,18672,23.4,16.5,30.7,W1,6,60637,3,22,92,2015,AfterWork,In-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,16,60629,8,498,154,2012,Morning,In-state,Other
+Englewood,Other S/SE/SW Side,Southwest Side,11888,28,28.5,46.6,E2,16,60621,7,7,28,2001,AfterWork,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,37,60644,15,15,163,2000,Midday,In-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,14,60629,8,0,113,1997,AfterWork,In-state,PAS
+Clearing,Other S/SE/SW Side,Southwest Side,25113,9.5,18.8,8.9,C3,13,60629,8,498,44,2010,Morning,In-state,PAS
+Lincoln Square,Other N/NW Side,Far North Side,37524,8.2,13.4,10.9,LS1,47,60625,20,498,6,2007,Morning,In-state,PAS
+Garfield Ridge,Garfield Ridge (Midway),Southwest Side,26353,11.3,19.3,8.8,GR,13,60629,8,51,28,2016,AfterWork,In-state,Other
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,495,163,2014,Evening,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,28,60607,1,10,1,2014,Morning,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,UV,1,60622,12,13,65,2000,Overnight,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60603,1,252,79,2007,Midday,In-state,PAS
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,24,60623,10,498,6,2017,Morning,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,498,185,2012,Morning,In-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,5,60615,2,498,6,2006,Morning,In-state,PAS
+Hermosa,Other N/NW Side,Northwest Side,15089,13.1,41.6,20.5,H2,31,60639,25,498,1,2011,Morning,In-state,PAS
+Edison Park,Other N/NW Side,Far North Side,40959,6.5,7.4,3.3,EP,41,60631,16,16,44,2003,Evening,In-state,PAS
+Greater Grand Crossing,Other S/SE/SW Side,South Side,17285,23,16.5,29.6,GC1,6,60621,7,498,10,2014,Morning,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,496,1,2001,Overnight,In-state,PAS
+East Garfield Park,Other W Side,West Side,12961,19.6,21.3,42.4,GP1,27,60612,11,8,154,2014,AfterWork,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,24,60644,11,498,6,2008,Morning,In-state,TMP
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,37,60639,25,498,6,2005,Morning,In-state,PAS
+Rogers Park,Other N/NW Side,Far North Side,23939,8.7,18.2,23.6,RP,49,60626,24,498,6,2014,Morning,In-state,PAS
+South Shore,Other S/SE/SW Side,South Side,19398,20,14,31.1,SS,7,60649,4,498,6,2007,Morning,In-state,PAS
+Washington Heights,Other S/SE/SW Side,Far Southwest Side,19713,20.8,13.7,16.9,WH,21,60643,22,22,65,2016,Evening,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,W2,44,60613,19,502,44,2008,AfterWork,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,42,60606,1,1,27,2007,Overnight,In-state,TMP
+Rogers Park,Other N/NW Side,Far North Side,23939,8.7,18.2,23.6,RP,49,60626,24,24,10,2004,AfterWork,In-state,PAS
+Uptown,Other N/NW Side,Far North Side,35787,8.9,11.8,24,U,46,60613,19,23,1,2007,AfterWork,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,4,60605,1,495,105,2002,Morning,Out-of-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,4,60615,2,498,185,2017,Midday,In-state,PAS
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,6,60619,6,498,113,2006,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,34,60607,12,498,113,2002,Morning,Out-of-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,16,60629,8,0,113,1998,AfterWork,In-state,Other
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,6,60619,6,498,6,2007,Morning,In-state,PAS
+Humboldt Park,Other W Side,West Side,13781,17.3,35.4,33.9,HP1,26,60639,25,25,5,2004,Midday,In-state,TRK
+Englewood,Other S/SE/SW Side,Southwest Side,11888,28,28.5,46.6,E2,16,60621,7,7,28,2001,Morning,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60603,1,152,27,2001,Midday,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,729,113,2017,AfterWork,Out-of-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,498,26,2009,Midday,In-state,PAS
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,20,60609,9,9,123,2005,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,729,79,2015,Midday,In-state,PAS
+Brighton Park,Other S/SE/SW Side,Southwest Side,13089,13.9,45.1,23.6,BP,12,60632,9,9,65,2004,Overnight,In-state,TRK
+West Garfield Park,Other W Side,West Side,10934,25.8,24.5,41.7,GP1,28,60624,11,498,113,2006,Midday,In-state,PAS
+Edgewater,Other N/NW Side,Far North Side,33385,9.2,9.7,18.2,E1,48,60660,24,24,1,2004,Evening,Out-of-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,19,498,113,2002,Morning,In-state,PAS
+Grand Boulevard,Other S/SE/SW Side,South Side,23472,24.3,15.9,29.3,GB,20,60615,2,2,177,2009,Midday,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,42,60601,1,0,79,1996,Midday,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,27,60610,18,18,79,2003,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,28,60608,12,14,44,2005,Evening,Out-of-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,10,89,2000,Morning,In-state,TRK
+Lower West Side,Other W Side,West Side,16444,15.8,40.7,25.8,LW,25,60608,10,498,44,2008,Morning,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,4,60605,1,495,1,2003,Midday,In-state,PAS
+Riverdale,Other S/SE/SW Side,Far Southeast Side,8201,34.6,27.5,56.5,R1,9,60827,5,5,10,2007,Overnight,In-state,PAS
+Belmont Cragin,Other N/NW Side,Northwest Side,15461,14.6,37.3,18.7,BC,36,60639,25,25,105,2001,Midday,In-state,PAS
+Irving Park,Other N/NW Side,Northwest Side,27249,10,22.4,13.1,IP,33,60618,17,17,105,1998,Midday,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,25,163,2000,AfterWork,In-state,PAS
+Norwood Park,Other N/NW Side,Far North Side,32875,9,11.5,5.4,NP2,41,60631,16,16,154,2007,Evening,In-state,PAS
+Greater Grand Crossing,Other S/SE/SW Side,South Side,17285,23,16.5,29.6,GC1,6,60637,3,9,31,2016,Midday,In-state,Other
+Belmont Cragin,Other N/NW Side,Northwest Side,15461,14.6,37.3,18.7,BC,31,60641,25,25,6,2001,Midday,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,18,79,2000,AfterWork,Out-of-state,PAS
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,24,60623,10,10,10,2005,Midday,In-state,TMP
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,LS2,1,60647,14,14,123,2003,Overnight,In-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,16,60636,8,498,26,2009,AfterWork,In-state,PAS
+Irving Park,Other N/NW Side,Northwest Side,27249,10,22.4,13.1,IP,33,60618,17,498,6,2015,Morning,In-state,TRK
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,OT,2,60610,18,502,26,2008,Midday,Out-of-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,502,44,2004,Evening,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,37,60644,15,15,105,2006,Midday,In-state,PAS
+Belmont Cragin,Other N/NW Side,Northwest Side,15461,14.6,37.3,18.7,BC,31,60639,25,498,113,2008,Midday,In-state,PAS
+Douglas,Other S/SE/SW Side,South Side,23791,18.2,14.3,29.6,D1,4,60616,1,499,6,2000,Morning,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,42,60601,1,0,79,1997,Morning,In-state,PAS
+Humboldt Park,Other W Side,West Side,13781,17.3,35.4,33.9,HP1,27,60624,11,498,154,2009,Midday,In-state,PAS
+Humboldt Park,Other W Side,West Side,13781,17.3,35.4,33.9,HP1,27,60624,11,498,179,2013,Morning,In-state,PAS
+Auburn Gresham,Other S/SE/SW Side,Far Southwest Side,15528,28.3,18.5,27.6,AG,17,60620,6,24,10,2007,AfterWork,In-state,PAS
+Garfield Ridge,Garfield Ridge (Midway),Southwest Side,26353,11.3,19.3,8.8,GR,13,60629,8,51,1,2015,Morning,In-state,PAS
+Near South Side,Near South Side,Central,59077,4.9,7.4,13.8,NS,3,60605,1,502,26,2010,AfterWork,In-state,PAS
+Auburn Gresham,Other S/SE/SW Side,Far Southwest Side,15528,28.3,18.5,27.6,AG,18,60620,6,0,123,1998,Overnight,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,25,60623,10,498,30,2017,Midday,In-state,PAS
+Uptown,Other N/NW Side,Far North Side,35787,8.9,11.8,24,U,46,60640,19,498,6,2009,Morning,In-state,Other
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WT,27,60642,12,12,154,2018,Overnight,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,UC,27,60612,11,498,10,2016,Midday,In-state,PAS
+South Shore,Other S/SE/SW Side,South Side,19398,20,14,31.1,SS,7,60649,3,21,155,2008,Overnight,In-state,PAS
+Edgewater,Other N/NW Side,Far North Side,33385,9.2,9.7,18.2,E1,48,60660,20,20,144,2005,Overnight,In-state,TRK
+Belmont Cragin,Other N/NW Side,Northwest Side,15461,14.6,37.3,18.7,BC,31,60641,25,25,11,2007,Overnight,In-state,PAS
+West Ridge,Other N/NW Side,Far North Side,23040,8.8,20.8,17.2,WR,40,60659,20,498,10,2014,Morning,In-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,4,60615,2,2,10,2013,Overnight,In-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,5,60637,2,59,57,2015,Morning,In-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,16,60629,8,8,10,2015,Overnight,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60605,1,0,1,1997,Midday,In-state,Other
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,19,498,10,2011,Midday,Out-of-state,PAS
+Edgewater,Other N/NW Side,Far North Side,33385,9.2,9.7,18.2,A1,40,60640,20,20,10,2016,Overnight,In-state,PAS
+Morgan Park,Other S/SE/SW Side,Far Southwest Side,27149,15,10.8,13.2,MP3,21,60643,22,22,10,2014,Midday,In-state,PAS
+Bridgeport,Other S/SE/SW Side,South Side,22694,13.7,22.2,18.9,B3,11,60608,9,9,144,2009,Overnight,In-state,TRK
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,27,60642,18,502,10,2011,Evening,Out-of-state,PAS
+Edgewater,Other N/NW Side,Far North Side,33385,9.2,9.7,18.2,A1,48,60640,20,20,10,2014,Evening,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,12,10,2003,Midday,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,502,10,2010,Evening,Out-of-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,19,27,2013,Overnight,Out-of-state,TMP
+Edison Park,Other N/NW Side,Far North Side,40959,6.5,7.4,3.3,EP,41,60631,16,729,113,2015,Evening,In-state,PAS
+Rogers Park,Other N/NW Side,Far North Side,23939,8.7,18.2,23.6,RP,49,60626,24,498,6,2008,Morning,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,GP2,42,60604,1,15,105,2003,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,27,60610,18,18,65,2010,Morning,In-state,PAS
+Gage Park,Other S/SE/SW Side,Southwest Side,12171,18.2,51.5,23.4,GP3,14,60632,8,498,154,2009,Morning,In-state,TMP
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,32,60657,19,502,26,2011,AfterWork,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,GC2,2,60610,18,498,11,2000,Morning,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,12,107,1999,Evening,In-state,PAS
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,24,60623,10,10,10,2017,AfterWork,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,28,60612,12,498,6,2013,Morning,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,502,113,2016,Evening,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60613,19,19,105,2003,Midday,Out-of-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,34,60661,1,498,79,2007,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,28,60612,12,498,44,2010,Morning,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,498,10,2006,Morning,In-state,PAS
+Belmont Cragin,Other N/NW Side,Northwest Side,15461,14.6,37.3,18.7,BC,26,60639,25,498,6,2012,Morning,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60603,1,152,163,2000,Midday,In-state,PAS
+Fuller Park,Other S/SE/SW Side,South Side,10432,33.9,26.6,51.2,FP,20,60609,9,498,179,2011,Midday,In-state,PAS
+North Center,Other N/NW Side,North Side,57123,5.2,4.5,7.5,NC2,32,60618,19,19,105,2011,AfterWork,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,42,60606,1,152,143,1999,Morning,In-state,PAS
+Mckinley Park,Other S/SE/SW Side,Southwest Side,16954,13.4,32.9,18.7,MP1,12,60609,9,9,123,2000,Evening,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,EV,1,60622,12,498,113,2004,Midday,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WT,27,60642,12,498,6,2008,Morning,Out-of-state,PAS
+Clearing,Other S/SE/SW Side,Southwest Side,25113,9.5,18.8,8.9,C3,13,60638,8,498,154,2007,Morning,In-state,PAS
+Edgewater,Other N/NW Side,Far North Side,33385,9.2,9.7,18.2,E1,48,60660,24,24,27,2001,Evening,In-state,PAS
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,LS2,35,60647,14,498,28,2007,Midday,In-state,TMP
+Rogers Park,Other N/NW Side,Far North Side,23939,8.7,18.2,23.6,RP,49,60626,24,504,123,2008,Morning,In-state,PAS
+Lower West Side,Other W Side,West Side,16444,15.8,40.7,25.8,LW,25,60608,12,12,1,1999,Evening,In-state,PAS
+West Garfield Park,Other W Side,West Side,10934,25.8,24.5,41.7,GP1,28,60624,11,11,123,2004,Midday,In-state,PAS
+North Center,Other N/NW Side,North Side,57123,5.2,4.5,7.5,NC2,32,60618,19,19,10,2004,Overnight,In-state,PAS
+Avondale,Other N/NW Side,North Side,20039,9.2,24.7,15.3,A4,35,60618,14,498,10,2011,Morning,In-state,PAS
+Auburn Gresham,Other S/SE/SW Side,Far Southwest Side,15528,28.3,18.5,27.6,AG,17,60620,6,498,6,2002,Morning,In-state,PAS
+Mckinley Park,Other S/SE/SW Side,Southwest Side,16954,13.4,32.9,18.7,MP1,12,60609,9,502,44,2009,Evening,In-state,PAS
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,15,60609,9,9,105,2004,Midday,In-state,TRK
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,4,60604,1,1,10,2008,Evening,In-state,PAS
+Brighton Park,Other S/SE/SW Side,Southwest Side,13089,13.9,45.1,23.6,BP,15,60632,9,9,44,2013,AfterWork,In-state,PAS
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,16,60609,9,9,10,2007,AfterWork,In-state,TMP
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,2,60614,18,498,1,2003,Midday,In-state,PAS
+Lower West Side,Other W Side,West Side,16444,15.8,40.7,25.8,LW,25,60616,12,1,10,2014,Morning,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,498,113,2015,Midday,In-state,PAS
+Rogers Park,Other N/NW Side,Far North Side,23939,8.7,18.2,23.6,RP,49,60626,24,24,144,2013,Overnight,In-state,Other
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,18,18,44,2010,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,Ra,42,60654,18,502,79,2013,AfterWork,In-state,PAS
+New City,Other S/SE/SW Side,Southwest Side,12765,23,41.5,29,NC1,15,60609,9,498,113,2002,Midday,In-state,PAS
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,LS2,35,60647,25,502,113,2007,AfterWork,In-state,PAS
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,LS2,1,60647,14,498,113,2006,AfterWork,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,14,10,2000,Midday,In-state,PAS
+South Shore,Other S/SE/SW Side,South Side,19398,20,14,31.1,SS,8,60649,4,498,123,2010,Morning,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,498,44,2010,Morning,In-state,PAS
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,8,60619,6,498,10,2014,Morning,In-state,PAS
+Greater Grand Crossing,Other S/SE/SW Side,South Side,17285,23,16.5,29.6,GC1,6,60619,6,498,123,2008,Morning,In-state,PAS
+West Elsdon,Other S/SE/SW Side,Southwest Side,15754,16.7,37,15.6,WE,23,60632,8,8,105,2005,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,28,60612,11,498,185,2015,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,27,60610,18,152,6,2001,Morning,In-state,PAS
+Archer Heights,Other S/SE/SW Side,Southwest Side,16134,16.5,35.9,14.1,AH,14,60632,8,498,44,2004,Midday,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,502,10,2010,AfterWork,In-state,PAS
+West Garfield Park,Other W Side,West Side,10934,25.8,24.5,41.7,GP1,24,60624,11,498,10,2014,Morning,Out-of-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,498,113,2014,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,34,60607,12,0,8,1996,Midday,In-state,PAS
+North Center,Other N/NW Side,North Side,57123,5.2,4.5,7.5,NC2,47,60618,19,19,6,2002,Morning,Out-of-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,34,60607,12,12,105,2009,Midday,In-state,PAS
+Portage Park,Other N/NW Side,Northwest Side,24336,12.6,19.3,11.6,PP,30,60634,16,498,10,2008,Morning,In-state,TMP
+North Lawndale,Other W Side,West Side,12034,21.2,27.6,43.1,NL,24,60623,10,0,123,1996,Morning,In-state,TRK
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,28,60608,12,498,1,2016,Midday,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,18,79,2002,Overnight,In-state,PAS
+Washington Park,Other S/SE/SW Side,South Side,13785,28.6,25.4,42.1,WP2,20,60637,2,2,5,2004,Midday,In-state,PAS
+Albany Park,Other N/NW Side,Far North Side,21323,10,32.9,19.2,AP2,33,60625,17,17,44,2008,AfterWork,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,10,11,1999,Overnight,Out-of-state,PAS
+Hyde Park,Other S/SE/SW Side,South Side,39056,8.4,4.3,18.4,HP2,5,60615,2,498,26,2008,Midday,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,34,60607,12,495,1,2002,Overnight,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WT,36,60622,12,13,6,2008,Morning,In-state,TMP
+Lower West Side,Other W Side,West Side,16444,15.8,40.7,25.8,LW,25,60608,12,498,65,2014,Morning,In-state,TMP
+Bridgeport,Other S/SE/SW Side,South Side,22694,13.7,22.2,18.9,B3,11,60616,9,9,1,2004,Overnight,In-state,TMP
+Irving Park,Other N/NW Side,Northwest Side,27249,10,22.4,13.1,IP,33,60618,17,0,163,1996,Morning,In-state,PAS
+East Side,Other S/SE/SW Side,Far Southeast Side,17104,12.1,31.9,19.2,ES,10,60617,4,4,6,2004,Midday,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,252,164,2007,Morning,Out-of-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,18,23,1,2004,Overnight,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,29,60644,15,15,10,2014,Midday,In-state,PAS
+South Chicago,Other S/SE/SW Side,Far Southeast Side,16579,19.7,26.6,29.8,SC,7,60617,4,4,154,2002,Evening,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WT,36,60612,12,0,6,1996,Morning,In-state,PAS
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,6,60619,6,6,52,2006,Overnight,In-state,PAS
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,6,60619,6,8,10,2015,AfterWork,In-state,PAS
+Englewood,Other S/SE/SW Side,Southwest Side,11888,28,28.5,46.6,E2,17,60621,7,498,123,2005,Morning,In-state,PAS
+Lower West Side,Other W Side,West Side,16444,15.8,40.7,25.8,LW,12,60608,10,498,6,2017,Morning,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,28,60644,15,15,89,2004,Overnight,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,MP2,42,60602,1,1,154,2003,Evening,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,S,42,60611,18,18,123,2005,AfterWork,In-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,18,502,8,2000,Evening,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,502,163,2016,Overnight,In-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,LP,43,60614,19,0,8,1996,AfterWork,In-state,PAS
+Avondale,Other N/NW Side,North Side,20039,9.2,24.7,15.3,A4,31,60641,25,498,10,2009,Morning,In-state,PAS
+Riverdale,Other S/SE/SW Side,Far Southeast Side,8201,34.6,27.5,56.5,R1,10,60827,5,498,123,2004,Morning,In-state,PAS
+Belmont Cragin,Other N/NW Side,Northwest Side,15461,14.6,37.3,18.7,BC,36,60639,25,498,10,2012,Morning,In-state,Other
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,37,60651,15,498,10,2012,Midday,In-state,PAS
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,29,60644,15,15,28,2000,AfterWork,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WT,27,60642,12,12,1,2001,Midday,In-state,PAS
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,LS2,35,60647,14,14,10,2008,Midday,In-state,PAS
+Edgewater,Other N/NW Side,Far North Side,33385,9.2,9.7,18.2,A1,40,60640,20,502,154,2016,AfterWork,In-state,PAS
+Avondale,Other N/NW Side,North Side,20039,9.2,24.7,15.3,A4,35,60618,17,17,10,2005,AfterWork,Out-of-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60605,1,498,79,2001,Midday,In-state,PAS
+South Shore,Other S/SE/SW Side,South Side,19398,20,14,31.1,SS,5,60649,3,2,11,2004,Midday,In-state,PAS
+Chatham,Other S/SE/SW Side,Far Southeast Side,18881,24,14.5,27.8,C1,6,60619,6,498,6,2017,Morning,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,502,44,2010,Evening,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,502,44,2018,AfterWork,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60602,1,15,11,2003,Morning,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,498,6,2012,Morning,In-state,PAS
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,LS2,1,60647,14,10,125,1999,AfterWork,In-state,Other
+Brighton Park,Other S/SE/SW Side,Southwest Side,13089,13.9,45.1,23.6,BP,12,60632,9,0,105,1998,Morning,In-state,PAS
+Brighton Park,Other S/SE/SW Side,Southwest Side,13089,13.9,45.1,23.6,BP,15,60632,9,253,1,2010,Evening,In-state,PAS
+Uptown,Other N/NW Side,Far North Side,35787,8.9,11.8,24,U,40,60640,20,502,113,2013,Evening,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,32,60647,14,502,179,2009,AfterWork,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,27,60610,18,18,79,2003,Midday,In-state,TRK
+West Englewood,Other S/SE/SW Side,Southwest Side,11317,35.9,26.3,34.4,E2,16,60636,7,0,123,1997,Evening,In-state,PAS
+Bridgeport,Other S/SE/SW Side,South Side,22694,13.7,22.2,18.9,B3,11,60608,9,498,6,2008,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,OT,2,60610,18,18,6,2008,Morning,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,34,60661,1,1,10,2002,Midday,In-state,PAS
+Loop,Loop,Central,65526,5.7,3.1,14.7,L,34,60604,1,152,79,2003,Midday,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,OT,2,60610,18,498,163,2003,Morning,In-state,PAS
+West Ridge,Other N/NW Side,Far North Side,23040,8.8,20.8,17.2,WR,50,60626,24,24,123,2004,Morning,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,UC,27,60612,12,9,27,2018,AfterWork,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,252,26,2010,Midday,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,1,60622,14,502,44,2012,Evening,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,498,44,2005,AfterWork,In-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,18,60629,8,501,123,2010,Morning,In-state,PAS
+Grand Boulevard,Other S/SE/SW Side,South Side,23472,24.3,15.9,29.3,GB,4,60615,2,498,10,2013,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,Ra,2,60610,18,0,79,1996,Midday,In-state,Other
+East Garfield Park,Other W Side,West Side,12961,19.6,21.3,42.4,GP1,27,60612,11,501,123,2011,Morning,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,B2,46,60613,19,9,10,2014,Midday,In-state,PAS
+Chicago Lawn,Other S/SE/SW Side,Southwest Side,13231,17.1,31.2,27.9,CL,16,60629,8,498,44,2010,Morning,Out-of-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,LI,27,60612,12,12,113,2003,Midday,In-state,PAS
+Fuller Park,Other S/SE/SW Side,South Side,10432,33.9,26.6,51.2,FP,3,60609,9,2,10,2003,Overnight,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,WP3,1,60622,14,14,105,2008,Midday,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,498,1,2007,Morning,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,498,6,2008,Morning,In-state,PAS
+Lincoln Park,Lincoln Park,North Side,71551,5.1,3.6,12.3,Sa,43,60614,19,498,113,2003,AfterWork,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,27,60610,18,18,1,2006,Midday,In-state,PAS
+Avondale,Other N/NW Side,North Side,20039,9.2,24.7,15.3,A4,31,60641,25,498,6,2007,Morning,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,18,79,2013,Morning,Out-of-state,PAS
+Grand Boulevard,Other S/SE/SW Side,South Side,23472,24.3,15.9,29.3,GB,3,60615,2,2,154,2001,AfterWork,In-state,PAS
+Brighton Park,Other S/SE/SW Side,Southwest Side,13089,13.9,45.1,23.6,BP,12,60632,9,498,10,2016,Midday,In-state,TRK
+Belmont Cragin,Other N/NW Side,Northwest Side,15461,14.6,37.3,18.7,BC,31,60639,25,2,154,2001,Morning,In-state,PAS
+Logan Square,Logan Square,North Side,31908,8.2,14.8,16.8,LS2,1,60647,14,498,123,2001,Midday,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,10,178,2010,Overnight,In-state,PAS
+Near North Side,Near North Side,Central,88669,7,2.5,12.9,RN,42,60654,18,0,79,1998,Midday,In-state,PAS
+Kenwood,Other S/SE/SW Side,South Side,35911,15.7,11.3,21.7,K,4,60615,2,21,123,2006,Morning,In-state,PAS
+South Lawndale,Other W Side,West Side,10402,15.8,54.8,30.7,LV1,22,60623,10,17,123,2007,Midday,In-state,PAS
+Lower West Side,Other W Side,West Side,16444,15.8,40.7,25.8,LW,25,60608,10,10,44,2003,Midday,In-state,PAS
+Garfield Ridge,Garfield Ridge (Midway),Southwest Side,26353,11.3,19.3,8.8,GR,13,60638,8,51,1,2000,Midday,In-state,PAS
+West Town,West Town,West Side,43198,6.6,12.9,14.7,HP1,26,60647,14,14,185,2012,Midday,In-state,TMP
+Austin,Other W Side,West Side,15957,22.6,24.4,28.6,A3,24,60644,15,498,6,2002,Morning,In-state,PAS
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,502,1,2007,AfterWork,In-state,PAS
+Near West Side,Near West Side,West Side,44689,10.7,9.6,20.6,WL2,28,60607,1,498,113,2017,Midday,Out-of-state,TRK
+Lake View,Lake View,North Side,60058,4.7,2.6,11.4,LV2,44,60657,19,498,185,2014,Midday,In-state,PAS
+Uptown,Other N/NW Side,Far North Side,35787,8.9,11.8,24,U,40,60640,20,20,66,2005,AfterWork,In-state,TMP
