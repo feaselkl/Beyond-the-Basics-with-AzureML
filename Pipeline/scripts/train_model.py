@@ -64,10 +64,10 @@ def main(args):
         'random_state': 11
         }
     
-    model, signature, results=train_model(params, X_train, X_test, y_train, y_test)
+    model, results=train_model(params, X_train, X_test, y_train, y_test)
     
     print('Saving model...')
-    mlflow.sklearn.save_model(model, args.model_output, signature=signature)
+    mlflow.sklearn.save_model(model, args.model_output)
     
     print('Saving evauation results...')
     with open(Path(args.test_report) / 'results.json', 'w') as fp:
@@ -147,7 +147,7 @@ def train_model(params, X_train, X_test, y_train, y_test):
     mlflow.log_metric("roc_auc", float(roc_auc))
 
     # return model
-    return model, signature, results
+    return model, results
 
 def parse_args():
     parser=argparse.ArgumentParser()
