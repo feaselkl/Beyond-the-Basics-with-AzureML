@@ -1,0 +1,68 @@
+# .github/workflows/deploy-slides.yml
+#
+# Publishes this presentation to catallaxyservices.com/media/<repo-name>/
+# whenever main or master is updated.
+#
+# Setup, once per repository:
+#   Settings -> Secrets and variables -> Actions -> New repository secret
+#     Name:  OPALSTACK_DEPLOY_KEY
+#     Value: the contents of opalstack_deploy (the PRIVATE key)
+#
+# The key on the server is restricted to `rrsync -wo` rooted at
+# apps/static_media, so it cannot open a shell, cannot read anything back,
+# and cannot write outside that directory.
+
+name: Deploy slides
+
+on:
+  push:
+    branches: [main, master]
+  workflow_dispatch:        # lets you trigger a deploy by hand
+
+concurrency:
+  group: deploy-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh
+          printf '%s\n' "${{ secrets.OPALSTACK_DEPLOY_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          # Host key pinned deliberately rather than ssh-keyscan, so a
+          # DNS or routing compromise cannot silently redirect the upload.
+          cat > ~/.ssh/known_hosts <<'EOF'
+          opal4.opalstack.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJdXGMEPQD+Q8duPcEzjLxqRzLBExExFyJS89wMIn5G9
+          EOF
+          chmod 600 ~/.ssh/known_hosts
+
+      - name: Publish to catallaxyservices.com
+        env:
+          DEST: ${{ github.event.repository.name }}
+        run: |
+          rsync -rlvz --delete \
+            --exclude '.git/' \
+            --exclude '.github/' \
+            --exclude '.gitattributes' \
+            --exclude '.gitignore' \
+            -e "ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes" \
+            ./ "feaselkl@opal4.opalstack.com:${DEST}/"
+
+      - name: Confirm it is live
+        env:
+          DEST: ${{ github.event.repository.name }}
+        run: |
+          url="https://www.catallaxyservices.com/media/${DEST}/"
+          code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 30 "$url")
+          echo "$url -> HTTP $code"
+          # A presentation without an index.html will 403; treat only 2xx as success.
+          case "$code" in
+            2*) echo "Deployed." ;;
+            *)  echo "Unexpected status $code"; exit 1 ;;
+          esac
