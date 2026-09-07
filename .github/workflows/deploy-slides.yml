@@ -38,7 +38,7 @@ jobs:
           # Host key pinned deliberately rather than ssh-keyscan, so a
           # DNS or routing compromise cannot silently redirect the upload.
           cat > ~/.ssh/known_hosts <<'EOF'
-          opal4.opalstack.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIJdXGMEPQD+Q8duPcEzjLxqRzLBExExFyJS89wMIn5G9
+          opal19.opalstack.com ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGS6K9BGuF0gdZ+BEqYqic02gphgCPbteyD7CJB7ydfH
           EOF
           chmod 600 ~/.ssh/known_hosts
 
@@ -52,7 +52,7 @@ jobs:
             --exclude '.gitattributes' \
             --exclude '.gitignore' \
             -e "ssh -i ~/.ssh/deploy_key -o IdentitiesOnly=yes" \
-            ./ "feaselkl@opal4.opalstack.com:${DEST}/"
+            ./ "feaselkl@opal19.opalstack.com:${DEST}/"
 
       - name: Confirm it is live
         env:
